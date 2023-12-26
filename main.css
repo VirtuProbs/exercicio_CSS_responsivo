@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: cornflowerblue;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container, .fachada-loja {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 42px;
+    
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section div h2, section h2{
+    border-bottom: 1px solid rgb(2, 2, 233);
+}
+
+.fachada-loja img {
+    max-width: 100%;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    color: rgb(58, 58, 117);
+}
+
+section div h2, section h2{
+    margin-right: 32px;
+    padding: 0px 12px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.lista-produtos img {
+    max-width: 100%;
+}
+
+.lista-produtos li {
+    list-style: none;
+}
+
+.lista-produtos p, h2 {
+    margin-top: 8px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color:  rgb(58, 58, 117);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+        font-size: 18px;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1%;
+    }
+
+    .fachada-loja img{
+        width: 1023px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .lista-produtos {
+        display: block ;
+}
+
+}
